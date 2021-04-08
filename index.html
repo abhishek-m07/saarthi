@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<style>
+body {
+  margin: 0;
+  font-family: Poppins, Semibold, Bold; <!--Arial, Helvetica, sans-serif; --> 
+}
+<!-- logo -->
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+<!-- nav -->
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #f99917;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f99917;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+<!-- bg -->
+.container {
+  position: relative;
+  width: 100%;
+  max-width: auto;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -72%);
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 180%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f99917;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+.container .join {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 230%);
+  color: gray;
+  font-size: 14px;
+}
+
+
+* {box-sizing: border-box;}
+<!-- body {font-family: Verdana, sans-serif;} -->
+.mySlides {display: none;}
+img {vertical-align: middle;}
+  
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-104%, -130%);
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  transform: translate(300%, -2300%);
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* block over slide */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: gray;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.AboutUsBG {
+  
+  position:relative;
+  top: -350px;
+  left: 50px;
+  
+}
+
+.aug .img {
+  
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  z-index: -1;
+}
+
+.whole {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-3%, 110%);
+  }
+
+.whole .cardfau {
+  
+  border-radius: 15px;
+  transform: translate( 20%, -200%);
+  background-color: #f99917;
+  height: 300px;
+  width: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
+  
+}
+
+.whole .au {
+  transform: translate( -1%, -11%);
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  height: 300px;
+  width: 1000px;
+  color: black;
+  padding: 10px;
+  
+  
+}
+
+</style>
+</head>
+<body>
+
+<center><IMG class="displayed" src="images/Logo-Small.png" alt="..." width="120" height="50"></center>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#AboutUs">About Us</a>
+  <a href="#News/Updates">News/Updates</a>
+  <a href="#Companies">Companies</a>
+  <a href="#Organizations">Organizations</a>
+  <a href="#Projects">Projects</a>
+  <a href="#Resources">Resources</a>
+  
+  <div class="topnav-right">
+    <a href="#SignIn">Sign In</a>
+  </div>
+</div>
+
+<div class="container">
+  <img src="images/background.png" alt="bg" style="width:100%">
+  <div class="centered"><h1 style="font-size:370%;"><span style="color: #f99917;">Connecting</span> World</br> Transforming<span style="color: #f99917;"> Lives</span></h1>
+	<b><p style="font-size:80%;">&nbsp; Global dedicated to connecting and strengthening civil society organizations</br><center><p style="font-size:85%;">(CSOs), networks and support organizations worlwide.</center></p></p></b>
+  </div>
+  <button class="btn">Join Us</button>
+  <div class="join">
+  <p>Join Our Community of Changemakers</p>
+  </div>
+</div>
+<!-- First Slide -->
+<div class="midcontainer">
+  <img src="images/Group 10.png" alt="bg" style="width:50%">
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/Rectangle -1.png" style="width:100%">
+<div class="text-block">
+    <p>Bhibhu Starts Speaking Again After Intensive Counselling and Speech Therapy</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/Rectangle 5.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Rectangle -1.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+</figure>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script src="js.js">
+</script>
+</div>
+
+<div class="AboutUsBG">
+  <img src="images/About Us.png" style="width:70%">
+</div>
+<div class="aug">
+<img src="images/Group 41.png" width="1366" height="auto">
+
+</div>
+<div class="whole" >
+<div class="cardfau">
+  <div class="au">
+    <h1>About <span style="color:#f99917">Us</span></h1>
+	<p>For a remarkable About page, all you need to do is figure out your company's unique identity, and then share it with the world. Easy, right? Of course not.
+	Your "About Us page is one of the most important pages on your website, and it needs to be well crafted. This profile also happens to be one of the most commonly overlooked pages, which is why you should make it stand out.
+    </br></br>
+    The good news? It can be done. In fact, there are some companies out there with remarkable "About Us pages, the elements of which you can emulate on your own website.
+	</p>
+  </div>
+
+</div>
+ </div>
+
+</body>
+</html>
